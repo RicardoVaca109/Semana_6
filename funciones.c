@@ -32,35 +32,17 @@ int calcularDeterminante(int matriz[][4], int filas, int columnas)
     printf("Calculo por determinantes:\n");
     int determinanteprincipal = 0;
     // primeradiagonal1
-    int primervalorx = matriz[0][0];
-    int primervalory = matriz[1][1];
-    int primervalorz = matriz[2][2];
-    int primervalor = primervalorx * primervalory * primervalorz;
+    int primervalor = matriz[0][0] * matriz[1][1] * matriz[2][2];
     // segundadiagonal1
-    int segundovalorx = matriz[1][0];
-    int segundovalory = matriz[2][1];
-    int segundovalorz = matriz[0][2];
-    int segundovalor = segundovalorx * segundovalory * segundovalorz;
+    int segundovalor = matriz[1][0] * matriz[2][1] * matriz[0][2];
     // terceradiagonal1
-    int tercervalorx = matriz[2][0];
-    int tercervalory = matriz[0][1];
-    int tercervalorz = matriz[1][2];
-    int tercervalor = tercervalorx * tercervalory * tercervalorz;
+    int tercervalor = matriz[2][0] * matriz[0][1] * matriz[1][2];
     // cuartadiagonal
-    int cuartovalorx = matriz[2][0];
-    int cuartovalory = matriz[1][1];
-    int cuartovalorz = matriz[0][2];
-    int cuartovalor = cuartovalorx * cuartovalory * cuartovalorz;
+    int cuartovalor = matriz[2][0] * matriz[1][1] * matriz[0][2];
     // quintadaigonal
-    int quintovalorx = matriz[0][0];
-    int quintovalory = matriz[2][1];
-    int quintovalorz = matriz[1][2];
-    int quintovalor = quintovalorx * quintovalory * quintovalorz;
+    int quintovalor = matriz[0][0] * matriz[2][1] * matriz[1][2];
     // sexta diagonal
-    int sextovalorx = matriz[1][0];
-    int sextovalory = matriz[0][1];
-    int sextovalorz = matriz[2][2];
-    int sextovalor = sextovalorx * sextovalory * sextovalorz;
+    int sextovalor = matriz[1][0] * matriz[0][1] * matriz[2][2];
     determinanteprincipal = ((primervalor + segundovalor + tercervalor) - (cuartovalor + quintovalor + sextovalor));
     printf("%d\n", determinanteprincipal);
 }
@@ -69,35 +51,17 @@ int parteX(int matriz[][4], int filas, int columnas){
     printf("Calculo para X:\n");
     int parteprincipalx = 0;
     // primeradiagonal1
-    int primervalorx = matriz[0][3];
-    int primervalory = matriz[1][1];
-    int primervalorz = matriz[2][2];
-    int primervalor = primervalorx * primervalory * primervalorz;
+    int primervalor = matriz[0][3] * matriz[1][1] * matriz[2][2];
     // segundadiagonal1
-    int segundovalorx = matriz[1][3];
-    int segundovalory = matriz[2][1];
-    int segundovalorz = matriz[0][2];
-    int segundovalor = segundovalorx * segundovalory * segundovalorz;
+    int segundovalor = matriz[1][3] * matriz[2][1] * matriz[0][2];
     // terceradiagonal1
-    int tercervalorx = matriz[2][3];
-    int tercervalory = matriz[0][1];
-    int tercervalorz = matriz[1][2];
-    int tercervalor = tercervalorx * tercervalory * tercervalorz;
+    int tercervalor = matriz[2][3] * matriz[0][1] * matriz[1][2];
     // cuartadiagonal
-    int cuartovalorx = matriz[2][3];
-    int cuartovalory = matriz[1][1];
-    int cuartovalorz = matriz[0][2];
-    int cuartovalor = cuartovalorx * cuartovalory * cuartovalorz;
+    int cuartovalor = matriz[2][3] * matriz[1][1] * matriz[0][2];
     // quintadaigonal
-    int quintovalorx = matriz[0][3];
-    int quintovalory = matriz[2][1];
-    int quintovalorz = matriz[1][2];
-    int quintovalor = quintovalorx * quintovalory * quintovalorz;
+    int quintovalor = matriz[0][3] * matriz[2][1] * matriz[1][2];
     // sexta diagonal
-    int sextovalorx = matriz[1][3];
-    int sextovalory = matriz[0][1];
-    int sextovalorz = matriz[2][2];
-    int sextovalor = sextovalorx * sextovalory * sextovalorz;
+    int sextovalor = matriz[1][3] * matriz[0][1] * matriz[2][2];
     parteprincipalx = ((primervalor + segundovalor + tercervalor) - (cuartovalor + quintovalor + sextovalor));
     printf("%d\n", parteprincipalx);
 
@@ -107,91 +71,49 @@ int parteY(int matriz[][4], int filas, int columnas){
     printf("Calculo para Y:\n");
     int parteprincipalY = 0;
     // primeradiagonal1
-    int primervalorx = matriz[0][0];
-    int primervalory = matriz[1][3];
-    int primervalorz = matriz[2][2];
-    int primervalor = primervalorx * primervalory * primervalorz;
+    int primervalor = matriz[0][0] * matriz[1][3] * matriz[2][2];
     // segundadiagonal1
-    int segundovalorx = matriz[1][0];
-    int segundovalory = matriz[2][3];
-    int segundovalorz = matriz[0][2];
-    int segundovalor = segundovalorx * segundovalory * segundovalorz;
+    int segundovalor = matriz[1][0] * matriz[2][3] * matriz[0][2];
     // terceradiagonal1
-    int tercervalorx = matriz[2][0];
-    int tercervalory = matriz[0][3];
-    int tercervalorz = matriz[1][2];
-    int tercervalor = tercervalorx * tercervalory * tercervalorz;
+    int tercervalor = matriz[2][0] * matriz[0][3] * matriz[1][2];
     // cuartadiagonal
-    int cuartovalorx = matriz[2][0];
-    int cuartovalory = matriz[1][3];
-    int cuartovalorz = matriz[0][2];
-    int cuartovalor = cuartovalorx * cuartovalory * cuartovalorz;
+    int cuartovalor = matriz[2][0] * matriz[1][3] * matriz[0][2];
     // quintadaigonal
-    int quintovalorx = matriz[0][0];
-    int quintovalory = matriz[2][3];
-    int quintovalorz = matriz[1][2];
-    int quintovalor = quintovalorx * quintovalory * quintovalorz;
+    int quintovalor = matriz[0][0] * matriz[2][3] * matriz[1][2];
     // sexta diagonal
-    int sextovalorx = matriz[1][0];
-    int sextovalory = matriz[0][3];
-    int sextovalorz = matriz[2][2];
-    int sextovalor = sextovalorx * sextovalory * sextovalorz;
+    int sextovalor = matriz[1][0] * matriz[0][3] * matriz[2][2];
     parteprincipalY = ((primervalor + segundovalor + tercervalor) - (cuartovalor + quintovalor + sextovalor));
     printf("%d\n", parteprincipalY);
 
 }
 
-int parteZ(int matriz[][4], int filas, int columnas){
+int parteZ(int matriz[][4], int filas, int columnas ){
     printf("Calculo para Z:\n");
     int parteprincipalZ = 0;
     // primeradiagonal1
-    int primervalorx = matriz[0][0];
-    int primervalory = matriz[1][1];
-    int primervalorz = matriz[2][3];
-    int primervalor = primervalorx * primervalory * primervalorz;
+    int primervalor = matriz[0][0] * matriz[1][1] * matriz[2][3];
     // segundadiagonal1
-    int segundovalorx = matriz[1][0];
-    int segundovalory = matriz[2][1];
-    int segundovalorz = matriz[0][3];
-    int segundovalor = segundovalorx * segundovalory * segundovalorz;
+    int segundovalor = matriz[1][0] * matriz[2][1] * matriz[0][3];
     // terceradiagonal1
-    int tercervalorx = matriz[2][0];
-    int tercervalory = matriz[0][1];
-    int tercervalorz = matriz[1][3];
-    int tercervalor = tercervalorx * tercervalory * tercervalorz;
+    int tercervalor = matriz[2][0] *  matriz[0][1] * matriz[1][3];
     // cuartadiagonal
-    int cuartovalorx = matriz[2][0];
-    int cuartovalory = matriz[1][1];
-    int cuartovalorz = matriz[0][3];
-    int cuartovalor = cuartovalorx * cuartovalory * cuartovalorz;
+    int cuartovalor = matriz[2][0] * matriz[1][1] * matriz[0][3];
     // quintadaigonal
-    int quintovalorx = matriz[0][0];
-    int quintovalory = matriz[2][1];
-    int quintovalorz = matriz[1][3];
-    int quintovalor = quintovalorx * quintovalory * quintovalorz;
+    int quintovalor = matriz[0][0] * matriz[2][1] * matriz[1][3];
     // sexta diagonal
-    int sextovalorx = matriz[1][0];
-    int sextovalory = matriz[0][1];
-    int sextovalorz = matriz[2][3];
-    int sextovalor = sextovalorx * sextovalory * sextovalorz;
+    int sextovalor = matriz[1][0] * matriz[0][1] * matriz[2][3];
     parteprincipalZ = ((primervalor + segundovalor + tercervalor) - (cuartovalor + quintovalor + sextovalor));
     printf("%d\n", parteprincipalZ);
 
 }
 
-int partesdivDeterminante( int determinanteprincipal, int  parteprincipalx, int parteprincipalY, int  parteprincipalZ){
+void partesdivDeterminante(int determinanteprincipal, int parteprincipalx, int parteprincipalY, int parteprincipalZ)
+{
+    float divX = parteprincipalx / determinanteprincipal;
+    float divY = parteprincipalY / determinanteprincipal;
+    float divZ = parteprincipalZ / determinanteprincipal;
 
-    int divX = 0;
-    int divY = 0;
-    int divZ = 0;
-
-    divX = parteprincipalx/determinanteprincipal;
-    divY=parteprincipalY/determinanteprincipal;
-    divZ=parteprincipalZ/determinanteprincipal;
-
-    printf("Valor de X:%d\n ", divX);
-    printf("Valor de Y:%d\n ", divY);
-    printf("Valor de X:%d\n ", divZ);
-
-
+    printf("Valor de X: %.2f\n", divX);
+    printf("Valor de Y: %.2f\n", divY);
+    printf("Valor de Z: %.2f\n", divZ);
 }

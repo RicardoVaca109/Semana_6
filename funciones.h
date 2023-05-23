@@ -4,4 +4,4 @@ int calcularDeterminante(int matriz[][4], int filas, int columnas);
 int parteX(int matriz[][4], int filas, int columnas);
 int parteY(int matriz[][4], int filas, int columnas);
 int parteZ(int matriz[][4], int filas, int columnas);
-int partesdivDeterminante( int determinanteprincipal, int  parteprincipalx, int parteprincipalY, int  parteprincipalZ);
+void partesdivDeterminante(int determinanteprincipal, int parteprincipalx, int parteprincipalY, int parteprincipalZ);

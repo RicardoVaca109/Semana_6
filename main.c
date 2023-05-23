@@ -7,14 +7,12 @@ int main(int argc, char *argv[])
     int filas = 3;
     int columnas = 4;
     
-    //int final = partesdivDeterminante(divX);
-
     ingresarMatriz(matriz, filas, columnas);
     imprimirMatriz(matriz, filas, columnas);
-    calcularDeterminante(matriz, filas, columnas);
-    parteX(matriz,filas,columnas);
-    parteY(matriz,filas,columnas);
-    parteZ(matriz,filas,columnas);
-    //partesdivDeterminante( );
+    int determinanteprincipal = calcularDeterminante(matriz, filas, columnas);
+    int parteprincipalx = parteX(matriz, filas, columnas);
+    int parteprincipalY = parteY(matriz, filas, columnas);
+    int parteprincipalZ = parteZ(matriz, filas, columnas);
+    partesdivDeterminante(determinanteprincipal, parteprincipalx, parteprincipalY, parteprincipalZ);
     return 0;
 }
