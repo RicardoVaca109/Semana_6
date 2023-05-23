@@ -45,7 +45,8 @@ int calcularDeterminante(int matriz[][4], int filas, int columnas)
     int sextovalor = matriz[1][0] * matriz[0][1] * matriz[2][2];
     determinanteprincipal = ((primervalor + segundovalor + tercervalor) - (cuartovalor + quintovalor + sextovalor));
     printf("%d\n", determinanteprincipal);
-}
+    return determinanteprincipal;
+    }
 
 int parteX(int matriz[][4], int filas, int columnas){
     printf("Calculo para X:\n");
@@ -64,6 +65,7 @@ int parteX(int matriz[][4], int filas, int columnas){
     int sextovalor = matriz[1][3] * matriz[0][1] * matriz[2][2];
     parteprincipalx = ((primervalor + segundovalor + tercervalor) - (cuartovalor + quintovalor + sextovalor));
     printf("%d\n", parteprincipalx);
+    return parteprincipalx;
 
 }
 
@@ -84,6 +86,7 @@ int parteY(int matriz[][4], int filas, int columnas){
     int sextovalor = matriz[1][0] * matriz[0][3] * matriz[2][2];
     parteprincipalY = ((primervalor + segundovalor + tercervalor) - (cuartovalor + quintovalor + sextovalor));
     printf("%d\n", parteprincipalY);
+    return parteprincipalY;
 
 }
 
@@ -104,6 +107,7 @@ int parteZ(int matriz[][4], int filas, int columnas ){
     int sextovalor = matriz[1][0] * matriz[0][1] * matriz[2][3];
     parteprincipalZ = ((primervalor + segundovalor + tercervalor) - (cuartovalor + quintovalor + sextovalor));
     printf("%d\n", parteprincipalZ);
+    return parteprincipalZ;
 
 }
 
