@@ -27,7 +27,7 @@ void imprimirMatriz(int matriz[][4], int filas, int columnas)
     }
 }
 
-int calcularDeterminante(int matriz[][4], int filas, int columnas)
+float calcularDeterminante(int matriz[][4], int filas, int columnas)
 {
     printf("Calculo por determinantes:\n");
     int determinanteprincipal = 0;
@@ -48,7 +48,7 @@ int calcularDeterminante(int matriz[][4], int filas, int columnas)
     return determinanteprincipal;
     }
 
-int parteX(int matriz[][4], int filas, int columnas){
+float parteX(int matriz[][4], int filas, int columnas){
     printf("Calculo para X:\n");
     int parteprincipalx = 0;
     // primeradiagonal1
@@ -69,7 +69,7 @@ int parteX(int matriz[][4], int filas, int columnas){
 
 }
 
-int parteY(int matriz[][4], int filas, int columnas){
+float parteY(int matriz[][4], int filas, int columnas){
     printf("Calculo para Y:\n");
     int parteprincipalY = 0;
     // primeradiagonal1
@@ -90,7 +90,7 @@ int parteY(int matriz[][4], int filas, int columnas){
 
 }
 
-int parteZ(int matriz[][4], int filas, int columnas ){
+float parteZ(int matriz[][4], int filas, int columnas ){
     printf("Calculo para Z:\n");
     int parteprincipalZ = 0;
     // primeradiagonal1
@@ -111,13 +111,13 @@ int parteZ(int matriz[][4], int filas, int columnas ){
 
 }
 
-void partesdivDeterminante(int determinanteprincipal, int parteprincipalx, int parteprincipalY, int parteprincipalZ)
+void partesdivDeterminante(float determinanteprincipal, float parteprincipalx, float parteprincipalY, float parteprincipalZ)
 {
     float divX = parteprincipalx / determinanteprincipal;
     float divY = parteprincipalY / determinanteprincipal;
     float divZ = parteprincipalZ / determinanteprincipal;
 
-    printf("Valor de X: %.2f\n", divX);
-    printf("Valor de Y: %.2f\n", divY);
-    printf("Valor de Z: %.2f\n", divZ);
+    printf("Valor de X: %.3f\n", divX);
+    printf("Valor de Y: %.3f\n", divY);
+    printf("Valor de Z: %.3f\n", divZ);
 }

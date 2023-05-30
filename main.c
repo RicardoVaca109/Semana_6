@@ -9,10 +9,10 @@ int main(int argc, char *argv[])
     
     ingresarMatriz(matriz, filas, columnas);
     imprimirMatriz(matriz, filas, columnas);
-    int determinanteprincipal = calcularDeterminante(matriz, filas, columnas);
-    int parteprincipalx = parteX(matriz, filas, columnas);
-    int parteprincipalY = parteY(matriz, filas, columnas);
-    int parteprincipalZ = parteZ(matriz, filas, columnas);
+    float determinanteprincipal = calcularDeterminante(matriz, filas, columnas);
+    float parteprincipalx = parteX(matriz, filas, columnas);
+    float parteprincipalY = parteY(matriz, filas, columnas);
+    float parteprincipalZ = parteZ(matriz, filas, columnas);
     partesdivDeterminante(determinanteprincipal, parteprincipalx, parteprincipalY, parteprincipalZ);
     return 0;
 }
