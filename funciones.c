@@ -43,7 +43,8 @@ float calcularDeterminante(int matriz[][4], int filas, int columnas)
     int quintovalor = matriz[0][0] * matriz[2][1] * matriz[1][2];
     // sexta diagonal
     int sextovalor = matriz[1][0] * matriz[0][1] * matriz[2][2];
-    determinanteprincipal = ((primervalor + segundovalor + tercervalor) - (cuartovalor + quintovalor + sextovalor));
+    determinanteprincipal = ((primervalor + segundovalor + tercervalor) - 
+    (cuartovalor + quintovalor + sextovalor));
     printf("%d\n", determinanteprincipal);
     return determinanteprincipal;
     }
@@ -63,7 +64,8 @@ float parteX(int matriz[][4], int filas, int columnas){
     int quintovalor = matriz[0][3] * matriz[2][1] * matriz[1][2];
     // sexta diagonal
     int sextovalor = matriz[1][3] * matriz[0][1] * matriz[2][2];
-    parteprincipalx = ((primervalor + segundovalor + tercervalor) - (cuartovalor + quintovalor + sextovalor));
+    parteprincipalx = ((primervalor + segundovalor + tercervalor) - 
+    (cuartovalor + quintovalor + sextovalor));
     printf("%d\n", parteprincipalx);
     return parteprincipalx;
 
@@ -84,7 +86,8 @@ float parteY(int matriz[][4], int filas, int columnas){
     int quintovalor = matriz[0][0] * matriz[2][3] * matriz[1][2];
     // sexta diagonal
     int sextovalor = matriz[1][0] * matriz[0][3] * matriz[2][2];
-    parteprincipalY = ((primervalor + segundovalor + tercervalor) - (cuartovalor + quintovalor + sextovalor));
+    parteprincipalY = ((primervalor + segundovalor + tercervalor) - 
+    (cuartovalor + quintovalor + sextovalor));
     printf("%d\n", parteprincipalY);
     return parteprincipalY;
 
@@ -105,13 +108,15 @@ float parteZ(int matriz[][4], int filas, int columnas ){
     int quintovalor = matriz[0][0] * matriz[2][1] * matriz[1][3];
     // sexta diagonal
     int sextovalor = matriz[1][0] * matriz[0][1] * matriz[2][3];
-    parteprincipalZ = ((primervalor + segundovalor + tercervalor) - (cuartovalor + quintovalor + sextovalor));
+    parteprincipalZ = ((primervalor + segundovalor + tercervalor) - 
+    (cuartovalor + quintovalor + sextovalor));
     printf("%d\n", parteprincipalZ);
     return parteprincipalZ;
 
 }
 
-void partesdivDeterminante(float determinanteprincipal, float parteprincipalx, float parteprincipalY, float parteprincipalZ)
+void partesdivDeterminante(float determinanteprincipal, float parteprincipalx, 
+float parteprincipalY, float parteprincipalZ)
 {
     float divX = parteprincipalx / determinanteprincipal;
     float divY = parteprincipalY / determinanteprincipal;
